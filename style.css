@@ -1,0 +1,52 @@
+img{
+    max-width: 100%;
+}
+.Galeri{
+    background-color:aliceblue;
+    padding: 80px 0;
+}
+
+.Galeri .container-lg .row .col img{
+background-color: #ffffff;
+    padding: 5px;
+    width: 100%;
+    box-shadow: 0 0 15px rgba(0, 0, 0,0.3);
+    cursor: pointer;
+}
+.Galeri .container-lg .row .col:hover img{
+    transform: scale(1.1);
+}
+.Galeri .container-lg .Büyültme{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0,.9);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+}
+.Galeri .container-lg .Büyültme span{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 60px;
+    font-weight: bolder;
+    color: #fff;
+    cursor:pointer;
+    z-index: 100;
+}
+.Galeri .container-lg .Büyültme img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #fff;
+    border-radius: 5px;
+    width: 750px;
+    object-fit: cover;
+}
+@media(max-width:768px){
+    .Galeri .container-lg .Büyültme img{
+        width: 80%;
+    }
+}
